@@ -1,0 +1,51 @@
+# Terraform working directories and plugins
+**/.terraform/*
+.terraform/
+
+# State files — never commit; use the remote backend
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+terraform.tfstate.d/
+
+# Plan output (may contain secrets in plaintext)
+*.tfplan
+*.tfplan.*
+plan.out
+
+# Variable files — may contain credentials; commit examples only
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!example.tfvars
+
+# Crash / debug logs
+crash.log
+crash.*.log
+terraform.log
+
+# CLI config with credentials
+.terraformrc
+terraform.rc
+
+# Override files (local-only by convention)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Keys / certs
+*.pem
+*.key
+*.ppk
+
+# Environment
+.env
+.env.*
+!.env.example
+
+# Editors / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
