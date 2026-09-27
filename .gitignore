@@ -37,6 +37,7 @@ override.tf.json
 # Keys / certs
 *.pem
 *.key
+*.p12
 *.ppk
 
 # Environment
