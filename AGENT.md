@@ -8,6 +8,25 @@ misbehaves.
 Nothing in the product is deployed by hand. If a resource exists in AWS and
 is not described here, that is a defect.
 
+## Rule: the two plan files are the source of truth
+
+The main source of truth for DeskAway is these two files, which live one
+level up, in the `DeskAway` folder that holds all seven repos:
+
+- `../DeskAway-V1-Implementation-Plan (1).md`
+- `../DeskAway-V1-Repo-Structure.md`
+
+When this repo, this file, or any other doc disagrees with them, they win.
+
+Any change goes into those files first. A change to scope, design,
+structure or plan is written into the relevant plan file before anything in
+this repo is changed to match it.
+
+Never edit either file on your own. If a change seems needed there — or
+something in this repo has drifted from them — stop, say what you would
+change and why, and wait for a clear yes before touching them. Nothing is
+auto-updated.
+
 ## Folder structure
 
 ```
